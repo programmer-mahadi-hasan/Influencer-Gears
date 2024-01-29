@@ -1,3 +1,233 @@
-h1{
-    color: aqua;
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* base styles / utilities */
+
+
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0 auto;
+}
+
+main,
+header {
+    width: 1190px;
+    margin: 0 auto;
+}
+
+section,
+header {
+    margin-bottom: 100px;
+}
+
+/* header and navigation styles  */
+
+header {
+    padding-top: 16px;
+}
+
+.nav-bar {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+.nav-bar .web-logo a {
+    text-decoration: none;
+    color: #3A3A3A;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.nav-list ul {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-items: center;
+}
+
+.nav-list ul li {
+    list-style: none;
+    color: #3A3A3A;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* banner styles */
+
+.banner {
+    display: flex;
+    align-items: center;
+    gap: 130px;
+}
+
+.banner-info .banner-title {
+    color: #3A3A3A;
+    font-size: 52px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.banner-info .banner-description {
+    color: #3A3A3A;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* primary button styles */
+
+.primary-btn {
+    background: #E02C6D;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px 24px;
+    border: none;
+    border-radius: 40px;
+}
+
+.banner-thumbnail {
+    background-image: url(/images/Circle\ design.svg);
+    background-size: contain;
+    width: 475px;
+    height: 475px;
+    background-repeat: no-repeat;
+}
+
+.banner-thumbnail img {
+    width: 440px;
+}
+
+/* sponsor styles */
+
+.sponsor {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+/* popular collection styles */
+
+.collection-title {
+    color: #3A3A3A;
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.gear-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.gear-item {
+    width: 329px;
+    height: 476px;
+    padding: 20px 15px;
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+}
+
+.gear-item img {
+    width: 100%;
+}
+
+.gear-item .gear-item-title {
+    font-size: 28px;
+    color: #18191f;
+    font-weight: 500;
+}
+
+.gear-item .gear-item-price {
+    font-size: 24px;
+    color: #000000DE;
+    font-weight: 400;
+}
+
+.gear-item-title,
+.gear-item-price {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.rating .fa-star,
+.fa-star-half-stroke {
+    width: 12px;
+    height: 11px;
+    color: #FB8200;
+}
+
+.rating span {
+    margin-left: 10px;
+    font-size: 14px;
+    color: #5E6366;
+    font-weight: 700;
+}
+
+.gear-item .gear-item-description {
+    font-size: 14px;
+    color: #787885;
+    font-weight: 700;
+}
+
+.see-more {
+    text-align: end;
+    margin-right: 20px;
+    font-size: 16px;
+    color: #E02C6DDE;
+    font-weight: 700;
+}
+
+/* feature product styles */
+
+.feature-product {
+    display: flex;
+    gap: 95px;
+    align-items: center;
+}
+
+.feature-img img {
+    width: 404px;
+    height: 270px;
+}
+
+.feature-info .feature-title {
+    font-size: 38px;
+    color: #0A0826;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.feature-info .feature-description {
+    font-size: 16px;
+    color: #6C6C6C;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+/* footer styles  */
+
+footer {
+    height: 200px;
+    padding: 50px 0;
+    background-color: #0A0826;
+    text-align: center;
+}
+
+footer .footer-title {
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+footer .footer-description {
+    color: #D9DBE1;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+footer i {
+    color: #fff;
+    margin-left: 16px;
 }
