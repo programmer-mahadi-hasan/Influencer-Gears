@@ -100,8 +100,9 @@ header {
 /* sponsor styles */
 
 .sponsor {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /* popular collection styles */
@@ -230,4 +231,82 @@ footer .footer-description {
 footer i {
     color: #fff;
     margin-left: 16px;
+}
+
+/* -----------------------------------------
+             RESPONSIVE STYLES
+-------------------------------------------- */
+.hide {
+    display: none;
+}
+
+@media screen and (max-width: 576px) {
+    main{
+        width: 100%;
+    }
+    section{
+        margin-bottom: 50px;
+    }
+
+/* --------------------------------------------------------------------- */
+    /* ----------------------------------------------- */
+    /* banner styles  */
+    .banner,
+    .feature-product {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .banner-info .banner-title {
+        font-size: 28px;
+    }
+
+    .banner-info .banner-description {
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .banner-thumbnail {
+        width: 257px;
+        height: 257px;
+    }
+
+    .banner-thumbnail img {
+        width: 202px;
+        height: 190px;
+    }
+
+    .primary-btn {
+        font-weight: 500;
+    }
+
+    /* banner styles end  */
+    /* ------------------------------- */
+    /* sponsor styles  */
+    .sponsor {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    /* sponsor styles end  */
+    /* ------------------------------------ */
+    /* popular collection styles  */
+    .gear-items {
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }
+
+    /* popular collection styles end  */
+    /* ------------------------------------------------ */
+    /* feature image styles  */
+    .feature-img img {
+        width: 299px;
+        height: 188px;
+    }
+
+    /* end  */
+    /* ------------------------------- */
+    /* footer styles start  */
 }
